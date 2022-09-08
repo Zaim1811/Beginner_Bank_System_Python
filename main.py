@@ -74,7 +74,7 @@ def log_name():
             print('Please enter a alphabetical letter only')
         else:
             return account_name
-def log_age():
+def log_number():
     while True:
         account_number = input("Enter your id account number:")
         if not account_number.isdigit():
@@ -83,7 +83,7 @@ def log_age():
             return account_number
 
 print("Welcome to the Bank")
-atm = Atm(log_name(),log_age())
+atm = Atm(log_name(),log_number())
 print("Congratulation! You has logged in succesfully")
 while True:
     atm.transaction()
